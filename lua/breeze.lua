@@ -104,4 +104,5 @@ highlight("WhichKeyGroup", { fg = colors.purple })
 highlight("WhichKeyDesc", { fg = colors.fg })
 highlight("WhichKeySeperator", { fg = colors.gray })
 
--- No return M, no M.setup() needed if loaded via :colorscheme
+-- There should be NO 'return M' here, as it's not a module being returned.
+-- The file executes its commands directly when sourced by :colorscheme.
